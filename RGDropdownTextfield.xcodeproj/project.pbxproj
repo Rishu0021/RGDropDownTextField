@@ -16,6 +16,10 @@
 		F891716B24DE9E810078B80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891716924DE9E810078B80C /* LaunchScreen.storyboard */; };
 		F891717624DE9E810078B80C /* RGDropdownTextfieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891717524DE9E810078B80C /* RGDropdownTextfieldTests.swift */; };
 		F891718124DE9E810078B80C /* RGDropdownTextfieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891718024DE9E810078B80C /* RGDropdownTextfieldUITests.swift */; };
+		F891719224DE9FE30078B80C /* DropDownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891719024DE9FE30078B80C /* DropDownTableViewController.swift */; };
+		F891719324DE9FE30078B80C /* DropDownTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F891719124DE9FE30078B80C /* DropDownTableViewController.xib */; };
+		F891719524DEA0020078B80C /* RGDropDownTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891719424DEA0020078B80C /* RGDropDownTextfield.swift */; };
+		F891719824DEA1110078B80C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891719724DEA1110078B80C /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		F891717C24DE9E810078B80C /* RGDropdownTextfieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGDropdownTextfieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F891718024DE9E810078B80C /* RGDropdownTextfieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGDropdownTextfieldUITests.swift; sourceTree = "<group>"; };
 		F891718224DE9E810078B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F891719024DE9FE30078B80C /* DropDownTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewController.swift; sourceTree = "<group>"; };
+		F891719124DE9FE30078B80C /* DropDownTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewController.xib; sourceTree = "<group>"; };
+		F891719424DEA0020078B80C /* RGDropDownTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGDropDownTextfield.swift; sourceTree = "<group>"; };
+		F891719724DEA1110078B80C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		F891715A24DE9E7F0078B80C /* RGDropdownTextfield */ = {
 			isa = PBXGroup;
 			children = (
+				F891718E24DE9F770078B80C /* Custom Components */,
 				F891715B24DE9E7F0078B80C /* AppDelegate.swift */,
 				F891715D24DE9E7F0078B80C /* SceneDelegate.swift */,
 				F891715F24DE9E7F0078B80C /* ViewController.swift */,
@@ -129,6 +138,33 @@
 				F891718224DE9E810078B80C /* Info.plist */,
 			);
 			path = RGDropdownTextfieldUITests;
+			sourceTree = "<group>";
+		};
+		F891718E24DE9F770078B80C /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				F891719624DEA0EB0078B80C /* Utilities */,
+				F891718F24DE9FA90078B80C /* DropDown */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		F891718F24DE9FA90078B80C /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				F891719024DE9FE30078B80C /* DropDownTableViewController.swift */,
+				F891719124DE9FE30078B80C /* DropDownTableViewController.xib */,
+				F891719424DEA0020078B80C /* RGDropDownTextfield.swift */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		F891719624DEA0EB0078B80C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F891719724DEA1110078B80C /* UIView+Extension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F891719324DE9FE30078B80C /* DropDownTableViewController.xib in Resources */,
 				F891716B24DE9E810078B80C /* LaunchScreen.storyboard in Resources */,
 				F891716824DE9E810078B80C /* Assets.xcassets in Resources */,
 				F891716324DE9E7F0078B80C /* Main.storyboard in Resources */,
@@ -263,9 +300,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F891716024DE9E7F0078B80C /* ViewController.swift in Sources */,
+				F891719824DEA1110078B80C /* UIView+Extension.swift in Sources */,
 				F891715C24DE9E7F0078B80C /* AppDelegate.swift in Sources */,
 				F891716624DE9E7F0078B80C /* RGDropdownTextfield.xcdatamodeld in Sources */,
+				F891719524DEA0020078B80C /* RGDropDownTextfield.swift in Sources */,
 				F891715E24DE9E7F0078B80C /* SceneDelegate.swift in Sources */,
+				F891719224DE9FE30078B80C /* DropDownTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
