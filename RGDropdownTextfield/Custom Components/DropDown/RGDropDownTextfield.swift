@@ -8,17 +8,6 @@
 
 import UIKit
 
-struct ListItem {
-    var id: String
-    var name: String
-
-    init(id: String, name: String) {
-        self.id = id
-        self.name = name
-    }
-
-}
-
 class RGDropDownTextfield: UITextField, UITextFieldDelegate {
         
     // MARK: Variables

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84D1011250CB1AD008D4B18 /* TextFieldDropdownSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D1010250CB1AD008D4B18 /* TextFieldDropdownSearch.swift */; };
+		F84D1013250CB21B008D4B18 /* VFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D1012250CB21B008D4B18 /* VFTextField.swift */; };
+		F84D1015250CB292008D4B18 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D1014250CB292008D4B18 /* Theme.swift */; };
+		F84D1017250CB347008D4B18 /* RGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D1016250CB347008D4B18 /* RGView.swift */; };
+		F84D1019250CB3D5008D4B18 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D1018250CB3D5008D4B18 /* ListItem.swift */; };
 		F891715C24DE9E7F0078B80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891715B24DE9E7F0078B80C /* AppDelegate.swift */; };
 		F891715E24DE9E7F0078B80C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891715D24DE9E7F0078B80C /* SceneDelegate.swift */; };
 		F891716024DE9E7F0078B80C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891715F24DE9E7F0078B80C /* ViewController.swift */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F84D1010250CB1AD008D4B18 /* TextFieldDropdownSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDropdownSearch.swift; sourceTree = "<group>"; };
+		F84D1012250CB21B008D4B18 /* VFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFTextField.swift; sourceTree = "<group>"; };
+		F84D1014250CB292008D4B18 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F84D1016250CB347008D4B18 /* RGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGView.swift; sourceTree = "<group>"; };
+		F84D1018250CB3D5008D4B18 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		F891715824DE9E7F0078B80C /* RGDropdownTextfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGDropdownTextfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F891715B24DE9E7F0078B80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F891715D24DE9E7F0078B80C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +155,9 @@
 			children = (
 				F891719624DEA0EB0078B80C /* Utilities */,
 				F891718F24DE9FA90078B80C /* DropDown */,
+				F84D1010250CB1AD008D4B18 /* TextFieldDropdownSearch.swift */,
+				F84D1012250CB21B008D4B18 /* VFTextField.swift */,
+				F84D1018250CB3D5008D4B18 /* ListItem.swift */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -163,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				F891719724DEA1110078B80C /* UIView+Extension.swift */,
+				F84D1014250CB292008D4B18 /* Theme.swift */,
+				F84D1016250CB347008D4B18 /* RGView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -299,11 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84D1019250CB3D5008D4B18 /* ListItem.swift in Sources */,
+				F84D1017250CB347008D4B18 /* RGView.swift in Sources */,
 				F891716024DE9E7F0078B80C /* ViewController.swift in Sources */,
 				F891719824DEA1110078B80C /* UIView+Extension.swift in Sources */,
 				F891715C24DE9E7F0078B80C /* AppDelegate.swift in Sources */,
 				F891716624DE9E7F0078B80C /* RGDropdownTextfield.xcdatamodeld in Sources */,
+				F84D1011250CB1AD008D4B18 /* TextFieldDropdownSearch.swift in Sources */,
+				F84D1013250CB21B008D4B18 /* VFTextField.swift in Sources */,
 				F891719524DEA0020078B80C /* RGDropDownTextfield.swift in Sources */,
+				F84D1015250CB292008D4B18 /* Theme.swift in Sources */,
 				F891715E24DE9E7F0078B80C /* SceneDelegate.swift in Sources */,
 				F891719224DE9FE30078B80C /* DropDownTableViewController.swift in Sources */,
 			);

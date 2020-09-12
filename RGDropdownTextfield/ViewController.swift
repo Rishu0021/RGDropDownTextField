@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var searchTextfield: RGDropDownTextfield!
+    @IBOutlet weak var textFieldDropdown: TextFieldDropdownSearch!
     
     let dataList = [ListItem(id: "1", name: "San Francisco"),
                     ListItem(id: "2", name: "New York"),
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.searchTextfield.dataList = dataList
-        
+        self.textFieldDropdown.dataList = dataList
     }
 
 

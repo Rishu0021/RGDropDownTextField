@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,16 +27,64 @@
                                     <action selector="searchTextField:" destination="7Ub-t1-7JB" eventType="editingDidEnd" id="WWh-kr-DYi"/>
                                 </connections>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyq-F1-Nqc" userLabel="View Occasion Type">
+                                <rect key="frame" x="16" y="428" width="382" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-FF-UWS">
+                                        <rect key="frame" x="18" y="11" width="55.5" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="hV2-TA-AJx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g58-yQ-BKX" customClass="TextFieldDropdownSearch" customModule="RGDropdownTextfield" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="38" width="349" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="QHp-OS-9Ga"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                <color key="value" name="TextPlaceholderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="underlineStyle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="g58-yQ-BKX" secondAttribute="trailing" constant="15" id="1IM-cc-kir"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ddh-FF-UWS" secondAttribute="trailing" constant="15" id="CLF-h1-ChM"/>
+                                    <constraint firstAttribute="bottom" secondItem="g58-yQ-BKX" secondAttribute="bottom" constant="11" id="EQv-UW-z2m"/>
+                                    <constraint firstItem="g58-yQ-BKX" firstAttribute="top" secondItem="Ddh-FF-UWS" secondAttribute="bottom" constant="9" id="Kwp-DE-kIQ"/>
+                                    <constraint firstItem="g58-yQ-BKX" firstAttribute="leading" secondItem="hyq-F1-Nqc" secondAttribute="leading" constant="18" id="QfR-EP-kwq"/>
+                                    <constraint firstItem="Ddh-FF-UWS" firstAttribute="leading" secondItem="hyq-F1-Nqc" secondAttribute="leading" constant="18" id="UHI-5F-eg9"/>
+                                    <constraint firstItem="Ddh-FF-UWS" firstAttribute="top" secondItem="hyq-F1-Nqc" secondAttribute="top" constant="11" id="jL7-La-3oP"/>
+                                    <constraint firstAttribute="height" constant="73" id="pUm-2q-RmK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hyq-F1-Nqc" firstAttribute="top" secondItem="6bt-1y-m3X" secondAttribute="bottom" constant="150" id="1kW-TL-loh"/>
+                            <constraint firstItem="hyq-F1-Nqc" firstAttribute="leading" secondItem="e86-aQ-XPY" secondAttribute="leading" constant="16" id="5pP-jA-eGG"/>
                             <constraint firstItem="6bt-1y-m3X" firstAttribute="top" secondItem="e86-aQ-XPY" secondAttribute="top" constant="200" id="OOs-hh-wlT"/>
+                            <constraint firstItem="e86-aQ-XPY" firstAttribute="trailing" secondItem="hyq-F1-Nqc" secondAttribute="trailing" constant="16" id="X0B-Qp-xLN"/>
                             <constraint firstItem="6bt-1y-m3X" firstAttribute="centerX" secondItem="PMZ-Mf-HdQ" secondAttribute="centerX" id="ceE-c9-MPo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e86-aQ-XPY"/>
                     </view>
                     <connections>
                         <outlet property="searchTextfield" destination="6bt-1y-m3X" id="Bg7-p6-GFT"/>
+                        <outlet property="textFieldDropdown" destination="g58-yQ-BKX" id="fLv-H7-MYb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qac-yW-JjZ" sceneMemberID="firstResponder"/>
@@ -43,4 +92,9 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="TextPlaceholderColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
